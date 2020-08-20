@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src='https://bevacqua.github.io/dragula/dist/dragula.min.js'></script>
+  <link rel="stylesheet" href="https://bevacqua.github.io/dragula/dist/dragula.css">
+</head>
+<body> 
+
+<div class="container">
+  <div id="a" class="d-flex flex-wrap p-3 bg-secondary text-white">  
+    <div class="p-2 bg-info">Flex item a1</div>
+    <div class="p-2 bg-warning">Flex item a2</div>
+    <div class="p-2 bg-primary">Flex item a3</div>
+  </div>
+   <div id="b" class="d-flex flex-wrap p-3 bg-secondary text-white">  
+    <div class="p-2 bg-info">Flex item b1</div>
+    <div class="p-2 bg-warning">Flex item b2</div>
+    <div class="p-2 bg-primary">Flex item b3</div>
+  </div>
+</div>
+<script>
+dragula([document.getElementById("a"), document.getElementById("b")]);
+</script>
+</body>
+</html>
